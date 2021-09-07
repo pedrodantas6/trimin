@@ -6,6 +6,12 @@ function Home() {
         <Link href="/sobre">
             <a>Acessar página Sobre</a>
         </Link>
+        <Link href="/temas/raiz">
+            <a>Raiz</a>
+        </Link>
+        <Link href="/temas/raiz">
+            <a>Raiz</a>
+        </Link>
     </div>)
 }
 
