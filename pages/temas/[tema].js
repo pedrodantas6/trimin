@@ -9,7 +9,7 @@ export async function getStaticPaths() {
                 tema: "raiz"
             }
         }],
-        fallback: 'blocking'
+        fallback: false
     }
 }
 
@@ -24,7 +24,12 @@ export async function getStaticProps(context) {
 }
 
 function Temas(props) {
-    return <div>O tema é: {props.tema}</div>
+    switch (props.tema){
+        case "porcentagem": 
+            return <div>O tema é (pega o tema e acess aseu conteudo no banco de dados): {props.tema}</div>
+        case "raiz":
+            return <div>Raiz papito {props.tema}</div>
+    }
 }
 
 export default Temas;
