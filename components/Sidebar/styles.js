@@ -31,7 +31,7 @@ export const MenuItem = styled.div`
   }
 `;
 
-export const Subject = styled.div`
+export const SubjectsContainer = styled.div`
   width: 100%;
   padding: 20px 0;
   border-top: 0.5px solid rgba(22, 24, 35, 0.12);

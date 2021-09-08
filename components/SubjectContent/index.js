@@ -1,10 +1,10 @@
 import { Container } from "./styles";
-import { Contents } from "../Contents";
 
-function SubjectContent () {
+function SubjectContent ({subject}) {
     return (
         <Container>
-            <Contents></Contents>
+            <a>{subject.subject.name}</a>
+      <span>{subject.subject.disciplina}</span>
         </Container>
     )
 }

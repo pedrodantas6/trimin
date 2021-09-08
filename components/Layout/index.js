@@ -1,21 +1,22 @@
 import Header from '../Header';
 import Sidebar from '../Sidebar';
-import User from '../User';
+import SubjectContent from '../SubjectContent';
 import { Container, SidebarContainer, ContentContainer } from './styles';
 
 function Layout({ subjects }) {
     return (
         <>
             <Header></Header>
-            <Container>
-                
-        <User></User>
-                
-      
-      <SidebarContainer>{subjects.map((subject, index) => (
-          <Sidebar key={index} subject={subject}></Sidebar>))}
+            <Container> 
+            <SidebarContainer>
+          <Sidebar subjects={subjects}></Sidebar>
                 </SidebarContainer>
-                {/* <ContentContainer>{children}</ContentContainer> */}
+                <ContentContainer>
+                    {/* selecionar o texto do objeto que comtem o id do escolhido da sidebar */}
+                {subjects.map((subject, index) => (
+                    <SubjectContent key={index} subject={subject}></SubjectContent>
+          ))}  
+                </ContentContainer>
     </Container>
         </>
         )}

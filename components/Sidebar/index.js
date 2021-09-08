@@ -1,6 +1,7 @@
-import { Container, MenuItem, Subject, SubjectHeader, InfoContainer, Links } from './styles';
+import { Container, MenuItem, SubjectsContainer, SubjectHeader, InfoContainer, Links } from './styles';
+import Subject from '../Subject';
   
-function Sidebar ({ subject }) {
+function Sidebar ({subjects}) {
     return (
         <Container>
         <MenuItem active>
@@ -9,10 +10,12 @@ function Sidebar ({ subject }) {
         <MenuItem>
           <span>Redações</span>
         </MenuItem>
-        <Subject>
+        <SubjectsContainer>
         <SubjectHeader>Disciplinas</SubjectHeader>
-        <div>{subject.subject.disciplina}</div>
-      </Subject>
+        {subjects.map((subject, index) => (
+                    <Subject key={index} subject={subject}></Subject>
+          ))}
+      </SubjectsContainer>
 
         <InfoContainer>
           <Links margin>
