@@ -1,5 +1,4 @@
 import Text from '../components/Text';
-import { Container } from "./styles";
 import { openDB } from '../lib/openDB';
 
 export async function getStaticPaths() {
@@ -57,11 +56,11 @@ export async function getStaticProps(context) {
 function Temas(props) {
     return (
         <>
-            <Container>
+            
                 {props.subjects.map((subject, index) => (
                     <Text key={index} subject={subject} tema={props.tema}></Text>
           ))}  
-    </Container>
+
         </>
         )}
 
