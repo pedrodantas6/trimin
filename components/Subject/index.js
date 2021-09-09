@@ -1,9 +1,24 @@
+
 import { Container, Avatar, Info } from './styles';
 import Link from 'next/link';
+var n;
+var d;
+var name;export function search(tit){
+  name = tit;
+}
 
 export default function Subject({ subject }) {
+  n ='';
+  d='';
+  if(subject.subject.name.indexOf(name)>-1){
+    n= subject.subject.name;
+    d= subject.subject.disciplina;
+  }
 
-  return (
+  if(n== ''){
+  return null;
+  }else{
+    return (
     <Link href={subject.subject.name.toLowerCase()}>
     
     
@@ -15,4 +30,5 @@ export default function Subject({ subject }) {
       </Info>
     </Container></Link>
   );
+  }
 }
