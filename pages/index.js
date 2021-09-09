@@ -1,14 +1,14 @@
 import Layout from '../components/Layout';
 import SubjectContent from '../components/SubjectContent';
 import { openDB } from '../lib/openDB';
-import Link from 'next/link';
+
 
 
 function Home({ subjects }) {
     return <Layout subjects={subjects}>
-        <SubjectContent subjects={subjects}></SubjectContent>
-        <Link href='./sobre.js'>
-        <a>Sobre</a></Link>
+        <SubjectContent subjects={subjects}>
+        </SubjectContent>
+        
     </Layout>
 }
 

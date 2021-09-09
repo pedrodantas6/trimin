@@ -7,9 +7,8 @@ function Header() {
                 <LogotipoContainer>
                     <Logotipo>Trimin/Facilitando o aprendizado</Logotipo>
                 </LogotipoContainer>
-                <OptionsContainer>
-
-                </OptionsContainer>
+                {/* <OptionsContainer>
+                </OptionsContainer> */}
             </Content>
         </Container>
     )

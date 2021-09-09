@@ -6,6 +6,7 @@ export const Container = styled.div`
   width: 100%;
   height: 45px;
   padding: 0 16px;
+  background-color: red;
 `;
 
 export const Avatar = styled.div`

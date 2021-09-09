@@ -27,7 +27,7 @@ export const Logotipo = styled.div`
     font-family: Arial;
 `;
 
-export const OptionsContainer = styled.div`
-    display: flex;
-    align-items: center;
-`;
+// export const OptionsContainer = styled.div`
+//     display: flex;
+//     align-items: center;
+// `;
