@@ -56,7 +56,7 @@ export async function getStaticProps(context) {
 function Temas(props) {
     return (
         <>
-            
+            {/* tALVES USAR UM AWAIT PARA CORRIGIR O BUG DE TER QUE ATUALLIZAR A PAGINA PARA CARREGARN */}
                 {props.subjects.map((subject, index) => (
                     <Text key={index} subject={subject} tema={props.tema}></Text>
           ))}  

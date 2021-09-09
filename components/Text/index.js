@@ -1,19 +1,17 @@
 import { Container } from "./styles";
-var n = ''
-var t = 0;
-function SubjectContent (props) {
+import Link from "next/dist/client/link";
+var n;
 
-    if(props.subject.subject.name === props.tema && t != 1){
+function SubjectContent (props) {
+    n = '';
+    if(props.subject.subject.name === props.tema){
         n= props.subject.subject.name;
-        t = 1;
-    } else{
-        n= ''
     }
     return (
         <Container>
-            <a>{n}</a>
+            <Link href="/"><a>{n}</a></Link>
         </Container>
     )
 }
 
-export default SubjectContent;
+export default SubjectContent
