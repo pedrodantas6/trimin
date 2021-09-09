@@ -2,10 +2,9 @@ import { Container, Avatar, Info } from './styles';
 import Link from 'next/link';
 
 export default function Subject({ subject }) {
-  var link = '/temas/' + subject.subject.name.toLowerCase();
-  console.log(link)
+
   return (
-    <Link href={link}>
+    <Link href={subject.subject.name.toLowerCase()}>
     
     
     <Container>

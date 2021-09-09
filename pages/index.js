@@ -1,14 +1,10 @@
 import Layout from '../components/Layout';
-import SubjectContent from '../components/SubjectContent';
 import { openDB } from '../lib/openDB';
 
 
 
 function Home({ subjects }) {
-    return <Layout subjects={subjects}>
-        <SubjectContent subjects={subjects}>
-        </SubjectContent>
-        
+    return <Layout subjects={subjects}> 
     </Layout>
 }
 
